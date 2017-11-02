@@ -39,20 +39,41 @@ div {
     position: absolute;
     overflow: hidden;
 	box-sizing: border-box;
+<<<<<<< HEAD
+	background-color:#fff;
+=======
 	background-color:#bababa;
+>>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
 }
 
 #expandPortraitPanel, #expandLandscapePanel {
     position: absolute;
     overflow: hidden;
+<<<<<<< HEAD
+	box-sizing: border-box;
+	background-color:#fff;
+=======
     box-sizing: border-box;
     background-color: #fff;
+>>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
 }
 #hotspot{
 	position: absolute;
 	cursor:pointer;
 	background-color:#000000;/*DO NOT CHANGE*/
 }
+<<<<<<< HEAD
+
+#collapseButton {
+    cursor: pointer;
+	left:5px;
+	top:5px;
+}
+#closeButtonBackground {fill:#6D6D6D;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+#closeButtonX {fill:#FFFFFF;}
+
+=======
+>>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
 #firstFramesHotspot{
     width:300px;
     height:250px;
@@ -68,6 +89,8 @@ div {
    left: 0px;
 }
 
+<<<<<<< HEAD
+=======
 #eyebrow {
     background-color:#aaabad;
     color:#fff;
@@ -77,6 +100,7 @@ div {
     padding-top: 3px;
     font-size: 11px;
 }
+>>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
 #eyebrowExpanded {
     background-color:#aaabad;
     color:#fff;
@@ -96,6 +120,17 @@ div {
     font-size: 10px;
 }
 
+<<<<<<< HEAD
+#eyebrow {
+    background-color:#aaabad;
+    color:#fff;
+    width:300px;
+    height: 13px;
+    padding-left: 7px;
+    padding-top: 3px;
+    font-size: 11px;
+}
+=======
 #optionOne{
 	position: absolute;
 	cursor:pointer;
@@ -175,6 +210,7 @@ div {
     left: 256px;
 }
 
+>>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
 #aaron {
     background:url(../images/aaron.jpg);
 	width:300px;
@@ -226,6 +262,87 @@ div {
     left: 124px;
 }
 
+<<<<<<< HEAD
+#quote {
+	font-size: 23px;
+	left:13px;
+	top: 127px;
+}
+#cText1 {
+    color: #97D5E0;
+    font-size: 16px;
+    left: 29px;
+    top: 56px;
+}
+#cText2 {
+	font-size: 26px;
+	left: 29px;
+	top: 86px;
+	line-height: 27px;
+	font-weight: 700;
+}
+#cText3 {
+	font-size: 26px;
+	left: 29px;
+	top: 86px;
+	line-height: 27px;
+	font-weight: 700;
+}
+#cText4 {
+	font-size: 26px;
+	left: 29px;
+	top: 86px;
+	line-height: 27px;
+	font-weight: 700;
+}
+#number {
+	font-size: 9px;
+	left:8px;
+	top: 236px;
+	letter-spacing: .5px;
+}
+#cText5 {
+	font-size: 22px;
+	text-align:center;
+	width:100%;
+	top: 37px;
+	line-height: 24px;
+	letter-spacing: .5px;
+	font-weight: 700;
+}
+
+#bubbles {
+    background:url(../images/bubbles.png);
+    width:47px;
+    height:10px;
+    top: 226px;
+    left: 128px;
+}
+#bubbleFill {
+    background:url(../images/fillBubble.png);
+    width:7px;
+    height:7px;
+    top: 228px;
+    left: 130px;
+}
+
+#leftSide {
+    background:url(../images/leftSide.jpg);
+    width:46px;
+    height:150px;
+    top: 79px;
+    left: -1px;
+}
+#rightSide {
+    background:url(../images/rightSide.jpg);
+    width:44px;
+    height:152px;
+    top: 23px;
+    left: 256px;
+}
+
+=======
+>>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
 #blueBG{
     background:url(../images/blueBG.jpg);
 	width:300px;
@@ -238,6 +355,158 @@ div {
     top: 101px;
     left: 45px;
 }
+<<<<<<< HEAD
+
+#leftArrow{
+    background:url(../images/leftArrow.png) no-repeat center;
+    width:17px;
+    height:31px;
+    top: 96px;
+    left: -7px;
+    padding:40px 20px;
+    z-index:3;
+    cursor:pointer;
+}
+#rightArrow{
+    background:url(../images/rightArrow.png) no-repeat center;
+    width:17px;
+    height:31px;
+    top: 96px;
+    left: 246px;
+    padding:40px 20px;
+    z-index:3;
+    cursor:pointer;
+}
+#playButton{
+    background:url(../images/playButton.png);
+    width: 32px;
+    height: 30px;
+    top: 169px;
+    left: 134px;
+}
+
+#optionOne{
+	position: absolute;
+	cursor:pointer;
+	top: 100px;
+	left: 45px;
+	width: 211px;
+	height: 116px;
+}
+#optionTwo{
+	position: absolute;
+	cursor:pointer;
+	top: 100px;
+	left: 45px;
+	width: 211px;
+	height: 116px;
+}
+#optionThree{
+	position: absolute;
+	cursor:pointer;
+	top: 100px;
+	left: 45px;
+	width: 211px;
+	height: 116px;
+}
+#optionFour{
+	position: absolute;
+	cursor: pointer;
+	top: 100px;
+	left: 45px;
+	width: 211px;
+	height: 116px;
+}
+
+#choice1 {
+	font-size: 18px;
+	text-align:center;
+	width:100%;
+	top: 119px;
+	line-height: 20px;
+	letter-spacing: .5px;
+	font-weight: 700;
+}
+#choice2 {
+	font-size: 18px;
+	text-align:center;
+	width:100%;
+	top: 119px;
+	line-height: 20px;
+	letter-spacing: .5px;
+	font-weight: 700;
+}
+#choice3 {
+	font-size: 18px;
+	text-align:center;
+	width:100%;
+	top: 119px;
+	line-height: 20px;
+	letter-spacing: .5px;
+	font-weight: 700;
+}
+#choice4 {
+	font-size: 18px;
+	text-align:center;
+	width:100%;
+	top: 119px;
+	line-height: 20px;
+	letter-spacing: .5px;
+	font-weight: 700;
+}
+
+#dot1 {
+    width: 11px;
+    height:10px;
+    top: 226px;
+    left: 128px;
+    cursor:pointer;
+}
+#dot2 {
+    width: 11px;
+    height:10px;
+    top: 226px;
+    left: 140px;
+    cursor:pointer;
+}
+#dot3 {
+    width: 11px;
+    height:10px;
+    top: 226px;
+    left: 152px;
+    cursor:pointer;
+}
+#dot4 {
+    width: 11px;
+    height:10px;
+    top: 226px;
+    left: 165px;
+    cursor:pointer;
+}
+
+#rightArrow1, #rightArrow2, #rightArrow3{
+	position: absolute;
+	cursor:pointer;
+	top: 246px;
+	left: 256px;
+	width: 43px;
+	height: 152px;
+	z-index:3;
+}
+
+
+#leftArrow1, #leftArrow2, #leftArrow3{
+	position: absolute;
+	cursor:pointer;
+	top: 246px;
+	left: 2px;
+	width: 43px;
+	height: 152px;
+	z-index:3;
+}
+
+=======
+>>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
 #ctaBanner{
     background:url(../images/ctaBanner.jpg);
     width: 323px;
@@ -296,6 +565,8 @@ div {
     top: 270px;
     left: 467px;
 }
+<<<<<<< HEAD
+=======
 #leftArrow{
     background:url(../images/leftArrow.png) no-repeat center;
     width:17px;
@@ -371,6 +642,7 @@ div {
     left: 165px;
 }
 
+>>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
 
 #ctaPlay1, #ctaPlay2, #ctaPlay3 {
     background:url(../images/ctaArrow.png);
@@ -390,6 +662,8 @@ div {
     top: 573px;
 }
 
+<<<<<<< HEAD
+=======
 
 #collapseButton {
     cursor: pointer;
@@ -488,6 +762,7 @@ div {
 
 
 
+>>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
 #eText1 {
     color:#4A4A4A;
     font-size: 24px;
@@ -576,8 +851,11 @@ div {
     font-weight: 700;
 }
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
 /*Video*/
 
 #videoHolder1,#videoHolder2,#videoHolder3,#videoHolder4 {
@@ -622,6 +900,9 @@ div {
 }
 #video4PosterLand{
     background:url(../images/WBT2.0_RMBanners_PreviewImages_300x250_mobile_landscape_4.jpg);
+<<<<<<< HEAD
+}
+=======
 }
 
 
@@ -629,3 +910,4 @@ div {
 
 
 
+>>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
