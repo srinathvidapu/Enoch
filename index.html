@@ -1,0 +1,214 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WBT 2.0 CD Mobile</title>
+	<!--
+	This template will run in desktop, mobile and in-app and allows expanding in portrait or landscape. 
+	You can turn off environments and layouts in the 'configuration'
+	-->
+	<!--DoubleClick Studio (DCS)-->
+	<script src="scripts/lib/dcs_mobile-inapp_expanding.js"></script>	
+    <script src="/879366/Enabler_01_199.js" type="text/javascript"></script>
+		
+	<!--All banners-->
+    <script>
+		var googleFonts = ['Roboto:400,700'];
+		/*
+		treatment:"scale" or "fixed"
+		layout:"portrait", "portrait,landscape", "landscape"
+		maxScale:0 = none, 1 = 100%, 2.5 = 250%, etc.
+		*/
+		var configuration = {
+			desktop:{treatment:"scale", layout:"portrait,landscape",maxScale:1},/*actually, this is not intended for desktop*/
+			mobile:{treatment:"scale", layout:"portrait,landscape",maxScale:0},
+			inapp:{treatment:"scale", layout:"portrait,landscape",maxScale:0}
+		}
+	</script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.1/TweenMax.min.js"></script>
+    <script src="scripts/lib/intouch.min.js"></script>
+    <link href="styles/styles.css" rel="stylesheet">	
+	<script src="scripts/main.js"> </script>
+</head>
+<!--The numbers in the body id are used by dcs_scaletofit_pl.js and must be correct
+	id = "dim" + collapsed width + "x" + collapsed height + "-" + expand portrait width + "x" + expand portrait height + "-" + expand landscape width + "x" + expand landscape height
+		EX. dim320x50-600x450-450x600
+	
+	PLEASE NOTE: Even if you are only building landscape you need to include the portrait dimensions
+-->
+<body id="dim300x250-376x667-667x376">
+    <div id="cover">
+	<div id="viewport" class="collapseViewport">
+	<div id="scaleHolder" style="width:100%; height:100%">
+        <div id="collapsePanel">
+			<!-- Add collapsed content here. -->
+            <div id="background"></div>
+
+            <div id="aaron"></div>
+            <div id="mette"></div>
+            <div id="autumn"></div>
+            <div id="blueBG"></div>
+            <div id="eyebrow">Moderate to Severe Crohn&#39;s Disease</div>
+            <div id="cText1">VIDEO:</div>
+            <div id="quote1"></div>
+            <div id="quote2"></div>
+            <div id="cText2">Crohn’s is<br />an isolating<br />disease.</div>
+            <div id="aaronQuote"></div>
+            <div id="cText3">People say<br />‘You look<br />fine.’</div>
+            <div id="metteQuote"></div>
+            <div id="cText4">Just know<br />that you’re<br />not alone.</div>
+            <div id="autumnQuote"></div>
+
+            <div id="choiceBox"></div>
+
+
+
+            <div id="choice1">How other patients<br />can help you</div>
+            <div id="choice2">How Crohn’s can<br />affect your mindset</div>
+            <div id="choice3">Living with an illness<br />others can’t see</div>
+            <div id="choice4">Raising awarness can<br />be its own reward</div>
+
+            <div id="bubbles"></div>
+            <div id="bubbleFill"></div>
+
+            <div id="leftSide"></div>
+            <div id="rightSide"></div>
+            <div id="cText5">Choose the Crohn’s video<br />you’d like to watch:</div>
+
+
+            <div id="playButton"></div>
+
+
+
+            <div id="number">64Z-1924528</div>
+        </div>
+		<!-- Add expanded content here. -->
+		<div id="expandPortraitPanel">
+            <div id="eyebrowExpanded">Moderate to Severe Crohn&#39;s Disease</div>
+            <div id="eText1">Watch more patient videos<br />at RealCrohnsTalk.com</div>
+            <div id="eText2">Choose a topic below:</div>
+            <div id="ctaBanner"></div>
+            <div id="eText3">Trying to Manage<br />My Symptoms</div>
+            <div id="eText4">Deciding to Make a Change</div>
+            <div id="eText5">Talking With My Doctor</div>
+            <div id="ctaPlay1"></div>
+            <div id="ctaPlay2"></div>
+            <div id="ctaPlay3"></div>
+		</div>
+		<div id="expandLandscapePanel">
+            <div id="eText1Land">Watch more patient videos<br />at RealCrohnsTalk.com</div>
+            <div id="eText2Land">Choose a topic below:</div>
+            <div id="blackBox"></div>
+            <div id="eyebrowExpandedLand">Moderate to Severe Crohn&#39;s Disease</div>
+            <div id="ctaBannerLand"></div>
+            <div id="eText3Land">Trying to Manage<br />My Symptoms</div>
+            <div id="eText4Land">Deciding to Make<br />a Change</div>
+            <div id="eText5Land">Talking With<br />My Doctor</div>
+		</div>
+		<div id="shared" class="collapseShared">
+            <div id="hotspot" class="collapseViewport"></div>
+
+            <!--Portrait Videos-->
+            <div id="videoHolder4">
+                <video id="myVideo4" width="376" height="217" onclick="if (typeof InstallTrigger == &#39;undefined&#39;) (this.paused ? this.play() : this.pause());">
+                    <source src="https://s3.amazonaws.com/intouchsol/fpovideo/IntouchFPO_720.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="video4Poster" onclick="playVideo4()"></div>
+
+
+            <div id="videoHolder3">
+                <video id="myVideo3" width="376" height="217" onclick="if (typeof InstallTrigger == &#39;undefined&#39;) (this.paused ? this.play() : this.pause());">
+                    <source src="https://s3.amazonaws.com/intouchsol/fpovideo/IntouchFPO_720.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="video3Poster" onclick="playVideo3()"></div>
+
+
+            <div id="videoHolder2">
+                <video id="myVideo2" width="376" height="217" onclick="if (typeof InstallTrigger == &#39;undefined&#39;) (this.paused ? this.play() : this.pause());">
+                    <source src="https://s3.amazonaws.com/intouchsol/fpovideo/IntouchFPO_720.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="video2Poster" onclick="playVideo2()"></div>
+
+            <div id="videoHolder1">
+                <video id="myVideo1" width="376" height="217" onclick="if (typeof InstallTrigger == &#39;undefined&#39;) (this.paused ? this.play() : this.pause());">
+                    <source src="https://s3.amazonaws.com/intouchsol/fpovideo/IntouchFPO_720.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="video1Poster" onclick="playVideo1()"></div>
+            
+            <!--Landscape Videos-->
+            <div id="videoHolder4Land">
+                <video id="myVideo4Land" width="453" height="261" onclick="if (typeof InstallTrigger == &#39;undefined&#39;) (this.paused ? this.play() : this.pause());">
+                    <source src="https://s3.amazonaws.com/intouchsol/fpovideo/IntouchFPO_720.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="video4PosterLand" onclick="playVideo4Land()"></div>
+
+
+            <div id="videoHolder3Land">
+                <video id="myVideo3Land" width="453" height="261" onclick="if (typeof InstallTrigger == &#39;undefined&#39;) (this.paused ? this.play() : this.pause());">
+                    <source src="https://s3.amazonaws.com/intouchsol/fpovideo/IntouchFPO_720.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="video3PosterLand" onclick="playVideo3Land()"></div>
+
+
+            <div id="videoHolder2Land">
+                <video id="myVideo2Land" width="453" height="261" onclick="if (typeof InstallTrigger == &#39;undefined&#39;) (this.paused ? this.play() : this.pause());">
+                    <source src="https://s3.amazonaws.com/intouchsol/fpovideo/IntouchFPO_720.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="video2PosterLand" onclick="playVideo2Land()"></div>
+
+
+
+            <div id="videoHolder1Land">
+                <video id="myVideo1Land" width="453" height="261" onclick="if (typeof InstallTrigger == &#39;undefined&#39;) (this.paused ? this.play() : this.pause());">
+                    <source src="https://s3.amazonaws.com/intouchsol/fpovideo/IntouchFPO_720.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="video1PosterLand" onclick="playVideo1Land()"></div>
+
+            <div id="firstFramesHotspot"></div>
+
+
+            <div id="ctaBanner1"></div>
+            <div id="ctaBanner2"></div>
+            <div id="ctaBanner3"></div>
+            <div id="ctaBanner1Land"></div>
+            <div id="ctaBanner2Land"></div>
+            <div id="ctaBanner3Land"></div>
+
+            <div id="optionFour" class="option"></div>
+            <div id="optionThree" class="option"></div>
+            <div id="optionTwo" class="option"></div>
+            <div id="optionOne" class="showing"></div>
+
+            <div id="dot1"></div>
+            <div id="dot2"></div>
+            <div id="dot3"></div>
+            <div id="dot4"></div>
+
+            <div id="leftArrow"></div>
+            <div id="rightArrow"></div>
+
+            <div id="border"></div>
+		</div>
+	</div>
+	</div>
+        <div id="collapseButton"><svg version="1.1" id="closeButton" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewbox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve"><polygon id="closeButtonX" points="13.8,6.2 12.1,4.5 9.1,7.5 6.1,4.5 4.4,6.2 7.4,9.2 4.4,12.2 6.1,13.9 9.1,10.9 12.1,13.9 13.8,12.2 10.8,9.2 " /></svg></div>
+	</div>
+</body>
+</html> 
