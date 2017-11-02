@@ -133,11 +133,7 @@ function updateDimensions(){
 function updateDimensionsCont(){
 	//console.log("--> "+arguments.callee.name+"("+Array.prototype.slice.call(arguments)+")");
 	isPortrait = (getOrientationMode() == "landscape" ? false : true);
-<<<<<<< HEAD
 	updateDeviceInfo();
-=======
-	//updateDeviceInfo();
->>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
 }
 function getOrientationMode(){
 	var returnValue;
@@ -229,44 +225,13 @@ function setExpand() {
 function actionClickHandler(e) {
 	var target = e.toElement || e.relatedTarget || e.target || function () { throw "Failed to attach an event target!"; }
 	getOrientationMode();
-<<<<<<< HEAD
 	(isExpanded == true ? exitHandler(e) : requestExpand() );
-=======
-	(isExpanded == true ? exitHandler(e) : requestExpand());
-
-	if (target.id == "optionOne") {
-	    videoOne();
-	} else if (target.id == "optionTwo") {
-	    videoTwo();
-	} else if (target.id == "optionThree") {
-	    videoThree();
-	} else if (target.id == "optionFour") {
-	    videoFour();
-	} else if (target.id == "hotspot") {
-	    videoOne();
-	} else {
-	    TweenMax.set([videoHolder1, videoHolder2, videoHolder3, videoHolder4], { autoAlpha: 0 })
-	}
-	if (target.id == "hotspot" && isExpanded == true) {
-	    exitHandler(e);
-	}
-	console.log("actionClickHandler() ", Enabler.getContainerState(), "Expand Direction: " + Enabler.getExpandDirection());
-	if (target.id == "collapseButton") {
-	    requestManualCollapse()
-	} else {
-	    Enabler.getContainerState() == studio.sdk.ContainerState.EXPANDED ? Enabler.requestCollapse() : Enabler.requestExpand();
-	}
->>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
 }
 function requestManualCollapse(){
 	Enabler.requestFullscreenCollapse(); 
 	TweenMax.set([getElem("cover"),getElem("collapseButton")],{autoAlpha:0});
 	TweenMax.set([shared,cover,viewport,collapsePanel,scaleHolder,border], {autoAlpha:1});
-<<<<<<< HEAD
     updateDeviceInfo();
-=======
-    //updateDeviceInfo();
->>>>>>> 99cc3847fc69a64707e8fd509c5b44421b92e270
     startCollapseTimeline();
 }
 function requestExpand(){
